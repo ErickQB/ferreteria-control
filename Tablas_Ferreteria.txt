@@ -1,0 +1,101 @@
+Entidades:
+	- Proveedor
+		- Codigo
+		- Codigo_Proveedor
+		- Nombre
+		- Razon_Social
+		- Direccion
+		- Telefono
+		- Contacto_Nmbre
+		- Comentario
+		- Credito
+		- Limite_Credito 
+		- Pais
+		- Estado
+
+	- Proveedor_Sucursal
+		- Codigo
+		- Codigo_Sucursal
+		- Codigo_Proveedor(Codigo_Proveedor)
+		- Direcion
+		- Telefono
+		- Contacto
+		- Pais
+		- Estado
+
+	- Cliente
+		- Codigo
+		- NIT
+		- Nombre
+		- Direccion
+		- Num_Telefono
+		- Num_Telefono_2
+		- Credito
+		- Limite_Credito
+		- Estado
+
+	- Producto
+		- Codigo
+		- Codigo_Producto
+		- Nombre
+		- Marca
+		- Descripcion
+		- Medidas
+		- Peso
+		- Unidades/Ventas
+		- Stock(Codigo_Inventario)
+		- Categoria(Codigo_Categoria)
+		- Proveedor (Codigo_Proveedor)
+		- Estado
+		
+	- Empleado
+		- Codigo
+		- Codigo_Empleado
+		- Nombre
+		- Direccion
+		- No_Telefono
+		- Departamento
+		- Salario
+		- Fecha_Inicio
+		- Fecha_Fin
+		- Estado
+
+	- Inventario
+		- Codigo
+		- Fecha_Inicio
+		- Fecha_Fin
+		- Producto(Codigo_Producto)
+		- Descripcion(Nombre)
+		- Cantidad
+		- Precio_Venta
+		- Posicion
+		- Observaciones
+	
+	- Compra
+		- Codigo
+		- Fecha
+		- No_Factura
+		- Proveedor
+		- Producto(Codigo_Producto)
+		- Cantidad
+		- Precio_Compra
+		- Comentario
+		- Estado
+
+	- Factura
+	- Gasto
+	- Devolucion
+
+	- Categoria
+		- Codigo
+		- Codigo_Categoria
+		- Nombre
+		- Descripcion
+		- Estado
+
+	- Departamentos
+		- Codigo
+		- Codigo_Departamento
+		- Nombre
+		- Descripcion
+		- Estado
